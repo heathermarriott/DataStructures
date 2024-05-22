@@ -24,7 +24,7 @@ def bfs(graph, root):
     queue = [root]
 
     while queue:
-        x = queue.pop(0)
+        x = queue.pop(0) #by popping element in position 0, this behaves like a Queue
     
         for child in graph[x]:
             if child not in visited:
