@@ -1,3 +1,6 @@
+#Example from the YouTube video: 
+#https://youtu.be/M3uLrB6XAAY?si=NENNrpovJk2u8Ptr
+#
 class HeapNode:
     def __init__(self, name, priority):
         self.name = name
