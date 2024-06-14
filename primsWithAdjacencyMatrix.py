@@ -41,7 +41,7 @@ def add_to_heap(heap, edge):
     up_heap(heap, len(heap)-1)
     
 def prims(g, starting_node):
-    """ Find the minimum spanning try:
+    """ Find the minimum spanning tree
         g - a graph in adjacency matrix format
         starting_node - 0=A 1=B, ....
     """
