@@ -1,3 +1,6 @@
+//  For a tutorial of Binary Search Trees, watch 
+//  https://youtu.be/MKxBOHLxeGg?si=zTkWieujex9Npm0F
+//
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
