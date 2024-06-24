@@ -1,3 +1,5 @@
+// A YouTube video will be added soon to Painless Programming channel
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -33,6 +35,7 @@ bst* add(bst* root, bst*node){
     }
     else{
         printf("A user with that name already exists.  Select a new name.\n");
+         free(node);
     }
     return root;
 }
@@ -53,7 +56,7 @@ void updateTree(bst* root){
                 r=r->leftChild;
             }
         }
-        else {  // (strcmp(r->username, user) < 0)
+        else if (strcmp(r->username, user) < 0){
             //user on right side of the tree
             if (r->rightChild != NULL){
                 r=r->rightChild;
@@ -61,7 +64,7 @@ void updateTree(bst* root){
         }
     }
     printf("User does not exist.\n");
-    
+   
 }
 
 void printTree(bst* root){
