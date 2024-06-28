@@ -1,4 +1,4 @@
-// A YouTube video will be added soon to Painless Programming channel
+// YouTube video  https://youtu.be/1Qk6if4pl6s?si=_bZmtBlu7Mo71xVS
 
 #include <stdio.h>
 #include <stdlib.h>
