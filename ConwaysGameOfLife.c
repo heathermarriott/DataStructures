@@ -1,3 +1,13 @@
+//***************************************************************************************
+//* Conway's Game of Life 
+//* Intial inspiration for this came from a textbook - Data Structures and Programming
+//* Design in C - by Kruse, Leung, Tondo
+//*
+//* I made significant changes to clear the screen after each day, randomly assign
+//* values, display Day and Live cell count, and make program easier to understand.
+//*
+//* YouTube video explaining the code: https://youtu.be/MDEnBC3XStA
+//**************************************************************************************
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
