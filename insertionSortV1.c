@@ -3,16 +3,18 @@
 
 void insertion_sort(int unsorted[], int sorted[], int size) {
     int sorted_size = 0;
-
-    for (int u = 0; u < size; u++) {
-        int element = unsorted[u];
-        int inserted = 0; //0 means not yet inserted
+    int u, i, j; //counters
+    int element; //current element you are positioning
+    int inserted=0; //0= not yet inserted, 1= inserted 
+    for (u = 0; u < size; u++) {
+        element = unsorted[u];
+        inserted = 0; //0 means not yet inserted
 
         // Try to insert into the correct position
-        for (int i = 0; i < sorted_size; i++) {
+        for (i = 0; i < sorted_size; i++) {
             if (element < sorted[i]) {
                 // Shift elements to the right
-                for (int j = sorted_size; j > i; j--) {
+                for (j = sorted_size; j > i; j--) {
                     sorted[j] = sorted[j - 1];
                 }
                 sorted[i] = element;
@@ -33,9 +35,10 @@ void insertion_sort(int unsorted[], int sorted[], int size) {
 int main() {
     int unsorted[SIZE] = {6, 2, 10, 7, 1, 5};
     int sorted[SIZE];  // same size as unsorted
-
+    int i; //loop counter
+    
     printf("Unsorted list: ");
-    for (int i = 0; i < SIZE; i++) {
+    for (i = 0; i < SIZE; i++) {
         printf("%d ", unsorted[i]);
     }
     printf("\n");
@@ -43,10 +46,9 @@ int main() {
     insertion_sort(unsorted, sorted, SIZE);
 
     printf("Sorted list: ");
-    for (int i = 0; i < SIZE; i++) {
+    for (i = 0; i < SIZE; i++) {
         printf("%d ", sorted[i]);
     }
     printf("\n");
-
     return 0;
 }
