@@ -1,6 +1,6 @@
 //***************************************************************************************
 //* Conway's Game of Life 
-//* Intial inspiration for this came from a textbook - Data Structures and Programming
+//* Initial inspiration for this came from a textbook - Data Structures and Programming
 //* Design in C - by Kruse, Leung, Tondo
 //*
 //* I made significant changes to clear the screen after each day, randomly assign
